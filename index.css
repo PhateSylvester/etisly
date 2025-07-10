@@ -85,7 +85,7 @@
     display: flex;
 }
 .horizontal {
-    height: 0;
+    height: 1;
     flex-grow:1;
     position: relative;
     top: 30px;
@@ -123,6 +123,8 @@
 .projects {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .marginpro {
     margin: 70px;
