@@ -268,3 +268,37 @@
 .horiz {
     margin: 100px;
 }
+.conta{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+    padding: 100px;
+}
+.interest{
+    text-align: left;
+    min-width: auto;
+}
+.form{
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: left;
+}
+input{
+    border: none;
+    color: #979493;
+}
+button{
+    background: #ff6b00;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
