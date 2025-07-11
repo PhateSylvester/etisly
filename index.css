@@ -85,8 +85,8 @@
     display: flex;
 }
 .horizontal {
-    height: 1;
-    flex-grow:1;
+    height: 0;
+    flex-grow: 1;
     position: relative;
     top: 30px;
 }
@@ -264,9 +264,30 @@
 }
 .abtus {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
-    color: orange; 
+    font-size: 60px;
+    color: orange;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 .horiz {
     margin: 100px;
+}
+.abtpara {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 20px;
+     margin-left: 30px;
+}
+.abtbtn {
+    margin-top: 50px;
+    margin-left: 30px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+.abtbtn:hover {
+    background-color: orangered;
+    padding: 12px;
 }
