@@ -3,8 +3,384 @@
 <head>
     <meta charset="UTF-8" />
     <title>ETI-SLY Portfolio</title>
-    <link rel="stylesheet" href="index.css">
 </head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: #3e3c3c;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 7px;
+}
+.navlink {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 10px;
+}
+.a1, .a2, .a3, .a4 {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    bottom: 10px;
+    left: 450px;
+    font-family: cursive;
+}
+.navname {
+    position: relative;
+    top: 10px;
+    right: 400px;
+    font-family: system-ui, 
+    -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+.aboutlinks {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 40px;
+    top: 150px;
+    animation: 2s infinite alternate slideout;
+}
+.aboutimage {
+    position: relative;
+    left: 40px;
+}
+.hello {
+     position: relative;
+    top: 100px;
+    right: 40px;
+}
+.home {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: orange;
+    
+}
+.softdev {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.p {
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 18px;
+}
+.recwork {
+    font-size: 50px;
+    font-family: sans-serif;
+    position: relative;
+    right: 20px;
+}
+.work {
+    margin: 50px;
+    display: flex;
+}
+.horizontal {
+    height: 0;
+    flex-grow: 1;
+    position: relative;
+    top: 30px;
+}
+.stories {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+.border {
+    display: flex;
+    justify-content: space-between;
+}
+.border1, .border2, .border3, .border4 {
+    /* border-style: ridge; */
+    box-shadow: 0 4px 4px 0 
+    rgba(0, 0, 0, 0.05), 
+    0 6px 20px 
+    rgba(0, 0, 0, 0.05), 
+    0 6px 20px
+    rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+#stories {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+.trending {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.projects {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.marginpro {
+    margin: 70px;
+}
+.btns:hover {
+    cursor: pointer;
+    padding: 10px;
+}
+.pro1, .pro2, .pro3, .pro4, .pro5, .pro6 {
+    height: 65vh;
+    width: 25vw;
+    box-shadow: 0 4px 4px 0 
+    rgba(0, 0, 0, 0.05), 
+    0 6px 20px 
+    rgba(0, 0, 0, 0.05), 
+    0 6px 20px
+    rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url('bd-desk-one.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.pro1:hover {
+    background-image: url('bd-desk-one_.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.pro2:hover {
+    background-image: url('bd-desk-one_.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.pro3:hover {
+    background-image: url('bd-desk-one_.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.pro4:hover {
+    background-image: url('bd-desk-one_.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.pro5:hover {
+    background-image: url('bd-desk-one_.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.pro6:hover {
+    background-image: url('bd-desk-one_.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.para1, .para2, .para3, .para4, .para5, .para6 {
+    text-transform: capitalize;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: 150px;
+    font-size: 25px;
+}
+.btn1 {
+    position: relative;
+    top: 180px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    left: 100px;
+    text-transform: uppercase;
+}
+.btnpro {
+     box-shadow: 0 4px 4px 0 
+    rgba(0, 0, 0, 0.05), 
+    0 6px 20px 
+    rgba(0, 0, 0, 0.05), 
+    0 6px 20px
+    rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    background-color: rgb(240, 103, 40);
+    cursor: grab;
+    position: relative;
+    top: 60px;
+}
+.homelink {
+    text-decoration: none;
+    color: white;
+}
+.aboutus {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.abtimage {
+    position: relative;
+    left: 75px;
+    top: 50px;
+}
+#about {
+    background-color: black;
+}
+.btn1:hover {
+    cursor: pointer;
+    color: rgb(226, 21, 21);
+    padding: 5px;
+}
+.lang {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    text-align: center;
+}
+.list1 {
+    list-style: url('Rectangle-55-bg-img.png');
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.list2 {
+    list-style: url('Rectangle-56-bg-img.png');
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}.list3 {
+    list-style: url('Rectangle-57-bg-img.png');
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.abtus {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    color: orange;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.horiz {
+    margin: 100px;
+}
+.conta{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+    padding: 100px;
+}
+.interest{
+    font-family: cursive;
+    color: blueviolet;
+    font-size: 30px;
+    position: relative;
+    right: 100px;
+}
+.form {
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: left;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
+.abtpara {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 20px;
+     margin-left: 30px;
+}
+.abtbtn {
+    margin-top: 50px;
+    margin-left: 30px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+.abtbtn:hover {
+    background-color: orangered;
+    padding: 12px;
+}
+input {
+  font-family:sans-serif;
+  font-size: 15px;
+  line-height: 200%;
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+textarea {
+  font-family:sans-serif;
+  font-size: 30px;
+  line-height: 200%;
+  border: none;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+#btnpro {
+     box-shadow: 0 4px 4px 0 
+    rgba(0, 0, 0, 0.05), 
+    0 6px 20px 
+    rgba(0, 0, 0, 0.05), 
+    0 6px 20px
+    rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    background-color: rgb(240, 103, 40);
+    cursor: grab;
+}
+#btnpro:hover {
+    padding: 17px;
+    background-color: orangered;
+    color: white;
+    font-family: cursive;
+}footer a:hover {
+    padding: 5px;
+    cursor: help;
+}
+.list1:hover {
+    padding: 2px;
+    color: gray;
+}
+.list2:hover {
+    padding: 2px;
+    color: gray;
+}.list3:hover {
+    padding: 2px;
+    color: gray;
+}
+.homelink:hover {
+    padding: 3px;
+}
+</style>
 <body>
     <nav class="nav">
         <div>
@@ -45,7 +421,7 @@
             </p>
         </div>
         <div>
-            <img class="aboutimage" src="Desktops-header.png" width="600vw" height="600vh">
+            <img class="aboutimage" src="Desktops-header.png" width="500vw" height="600vh">
         </div>
     </section> <br>
     <section id="portfolio" class="work">
@@ -146,7 +522,7 @@
                 <button class="abtbtn" type="button">Get Our Resume</button>
             </div>
             <div class="abtimage">
-                <img src="Desktop-about.png">
+                <img src="Desktop-about.png" width="450px">
             </div> 
         </div>
         <div>
@@ -181,9 +557,9 @@
     <section class="conta">
         <div>
             <h2 class="interest">
-                <b>We're keen to
+                <b>We're keen to <br>
                 hearing about new projects, <br>
-                so if you'd like to chat please 
+                so if you'd like to chat please <br>
                 get in touch.</b>
             </h2>
         </div>
@@ -192,7 +568,7 @@
                 <input type="full name" placeholder="Full name*" required> <br> <br>
                 <input type="email address" placeholder="****@***.com" required> <br> <br>
                 <textarea name="comments" placeholder="comments or complaint?"></textarea> <br> <br>
-                <button type="button">Get in touch</button>
+                <button id="btnpro" type="button">Get in touch</button>
             </form>
         </div> <br>
     </section>
